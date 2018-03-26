@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>vue-cli-mpa</title>
+  <link href="http://temp.tupu360.com:8081/WXTemplate/css/test/postcss/cover.css?v=1" rel="stylesheet" type="text/css">
+  <link href="http://temp.tupu360.com:8081/WXTemplate/css/test/fonts/iconfont.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://static.tupu360.com/tupuwx/wx/common/js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="http://static.tupu360.com/tupuwx/wx/common/js/common.js?v=1"></script>
+</head>
+<body>
+  <div id="app"></div>
+  <span id="paramsData" style="display: none;">
+    { "imageUrl": "http://cdn.static.tupu360.com/tupuwx/wx/customer/dunkin/images/" }
+  </span>
+  <span id="pageConfigData" type="text/javascript" style="display:none;">
+    [ 
+      { 
+        "module": "headerImg", 
+        "type": "image", 
+        "config": { 
+          "image": { 
+            "type": "social", 
+            "image": "" 
+          }
+        } 
+      }, 
+      { 
+        "module": "filterMenu", 
+        "type": "dropDownFilter", 
+        "config": { 
+          "menus": [ 
+            { 
+              "module": "company", 
+              "type": "select",
+              "name": {"zh_CN": "分公司", "en": "Company"} 
+            }, 
+            { 
+              "module": "department", 
+              "type": "select", 
+              "name": {"zh_CN": "部门", "en": "Department"} 
+            }, 
+            { 
+              "module": "city", 
+              "type": "select", 
+              "name": {"zh_CN": "城市", "en": "City"} 
+            }, 
+            { 
+              "module": "search", 
+              "type": "search", 
+              "name": {"zh_CN": "搜索", "en": "Search"} 
+            } 
+          ] 
+        } 
+      }, 
+      { 
+        "module": "operate", 
+        "config": { 
+          "allCheck": { "zh_CN": "全选", "en": "All"}, 
+          "total": { 
+            "front": {"zh_CN": "共", "en": ""}, 
+            "after": {"zh_CN": "个职位", "en": "Positions"} 
+          }, 
+          "share": {"zh_CN": "我要转发", "en": "Share"} 
+        } 
+      }, 
+      { 
+        "module": "position", 
+        "type": "linear", 
+        "config": { 
+          "hotIcon": "yes", 
+          "award": {
+            "icon": "yes",
+            "money": "yes"
+          }, 
+          "showItem": { 
+            "date": "yes", 
+            "city": "yes", 
+            "company": "yes" 
+          }, 
+          "extend": { 
+            "detail": "yes", 
+            "deliverBtn": {"zh_CN": "立即投递", "en": "Deliver"}, 
+            "recommendBtn": {"zh_CN": "推荐", "en": "Recommend"}, 
+            "moreBtn": {"zh_CN": "查看更多", "en": "More info"} 
+          } 
+        } 
+      }, 
+      { 
+        "module": "bottomMenu", 
+        "config": { 
+          "menus": [ 
+            { 
+              "link": "http://www.baidu.com", 
+              "text": {
+                "zh_CN": "发展", 
+                "en": "Development"
+              } 
+            }, 
+            { 
+              "link": "http://www.sina.com", 
+              "text": {"zh_CN": "福利", "en": "Welfare"} 
+            }, 
+            { 
+              "link": "http://www.qq.com",
+              "text": {"zh_CN": "生活", "en": "Life"} 
+            } 
+          ] 
+        } 
+      }, 
+      { 
+        "module": "others", 
+        "config": [ 
+          { 
+            "type": "schoolLink", 
+            "config": { 
+              "link": "http://www.tupu360.com.cn", 
+              "image": "hiCampusRoute.jpg", 
+              "text": {"zh_CN": "校招行程", "en": "School trip"} 
+            } 
+          } 
+        ] 
+      } 
+    ]
+  </span>
+  <script type="text/javascript" src="position-list.js"></script>
+</body>
+</html>
